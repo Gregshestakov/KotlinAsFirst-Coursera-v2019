@@ -3,6 +3,7 @@
 package lesson4.task1
 
 import lesson1.task1.discriminant
+import java.io.File
 import kotlin.math.sqrt
 
 /**
@@ -50,10 +51,42 @@ fun negativeList(list: List<Int>): List<Int> {
     for (element in list) {
         if (element < 0) {
             result.add(element)
+
         }
     }
     return result
 }
+
+fun alignFile1(inputName: String, lineLength: Int, outputName: String) {
+    val outputStream = File(outputName).bufferedWriter()
+    var currentLineLength = 0
+    val test = 1
+    for (line in File(inputName).readLines()) {
+        if (line.isEmpty()) {
+            outputStream.newLine()
+            if (currentLineLength > 0) {
+                outputStream.newLine()
+                currentLineLength = 0
+            }
+            continue
+        }
+        for (word in line.split(" ")) {
+            if (currentLineLength > 0) {
+                if (word.length + currentLineLength >= lineLength) {
+                    outputStream.newLine()
+                    currentLineLength = 0
+                } else {
+                    outputStream.write(" ")
+                    currentLineLength++
+                }
+            }
+            outputStream.write(word)
+            currentLineLength += word.length
+        }
+    }
+    outputStream.close()
+}
+
 
 /**
  * Пример
