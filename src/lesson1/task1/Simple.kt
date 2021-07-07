@@ -17,7 +17,7 @@ fun sqr(x: Int) = x * x
  *
  * Вычисление квадрата вещественного числа
  */
-fun sqr(x: Double) = x * x
+fun sqr(x1: Double) = x * x
 fun test (x:Double){
     todo()
 }
