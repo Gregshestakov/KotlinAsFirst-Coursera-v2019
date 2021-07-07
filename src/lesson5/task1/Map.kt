@@ -13,16 +13,16 @@ fun shoppingListCost(
     shoppingList: List<String>,
     costs: Map<String, Double>
 ): Double {
-    var total23Cost = 0.0
+    var total2Cost = 0.0
 
     for (item in shoppingList) {
         val itemCost = costs[item]
         if (itemCost != null) {
-            total23Cost += itemCost
+            total2Cost += itemCost
         }
     }
 
-    return total23Cost
+    return total2Cost
 }
 
 /**
