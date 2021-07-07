@@ -10,7 +10,8 @@ import kotlin.math.*
  * Вычисление квадрата целого числа
  */
 fun sqr(x: Int) = x * x
-
+fun sqr1(x1: Int) = x1 * x1
+fun sqr2(x12: Int) = x12 * x12
 /**
  * Пример
  *
@@ -67,7 +68,7 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
  * Определить длину того же отрезка в метрах (в данном случае 18.98).
  * 1 сажень = 3 аршина = 48 вершков, 1 вершок = 4.445 см.
  */
-fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
+fun seconds1(hours: Int, minutes: Int, seconds: Int): Int = TODO()
 /**
  * Тривиальная
  *
