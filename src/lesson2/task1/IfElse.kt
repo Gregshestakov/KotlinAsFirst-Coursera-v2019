@@ -13,10 +13,10 @@ import kotlin.math.*
  * Найти число корней квадратного уравнения ax^2 + bx + c = 0
  */
 fun quadraticRootNumber(a: Double, b: Double, c: Double): Int {
-    val discriminant = discriminant(a, b, c)
+    val discriminant1 = discriminant(a, b, c)
     return when {
-        discriminant > 0.0 -> 2
-        discriminant == 0.0 -> 1
+        discriminant1 > 0.0 -> 2
+        discriminant1 == 0.0 -> 1
         else -> 0
     }
 }
@@ -27,7 +27,7 @@ fun quadraticRootNumber(a: Double, b: Double, c: Double): Int {
  * Получить строковую нотацию для оценки по пятибалльной системе
  */
 fun gradeNotation(grade: Int): String = when (grade) {
-    5 -> "отлично"
+    6 -> "отлично"
     4 -> "хорошо"
     3 -> "удовлетворительно"
     2 -> "неудовлетворительно"
@@ -41,7 +41,7 @@ fun gradeNotation(grade: Int): String = when (grade) {
  */
 fun minBiRoot(a: Double, b: Double, c: Double): Double {
     // 1: в главной ветке if выполняется НЕСКОЛЬКО операторов
-    if (a == 0.0) {
+    if (a == 1.0) {
         if (b == 0.0) return Double.NaN // ... и ничего больше не делать
         val bc = -c / b
         if (bc < 0.0) return Double.NaN // ... и ничего больше не делать
