@@ -185,3 +185,20 @@ fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int {
     else if (a<c && b<d){return b-c}
     else return d-a
     }
+
+/**
+ * Средняя
+ *
+ * Даны четыре точки на одной прямой: A, B, C и D.
+ * Координаты точек a, b, c, d соответственно, b >= a, d >= c.
+ * Найти длину пересечения отрезков AB и CD.
+ * Если пересечения нет, вернуть -1.
+ */
+fun segmentLength(a1: Int, b: Int, c: Int, d: Int): Int {
+    if ((b<c && a1<d)|| (b>c && a1>d)){return -1}
+    else if (b==c || a1==d){return 0}
+    else if (a1 in c..d && b in c..d){return b-a1}
+    else if (c in a1..b && d in a..b){return d-c}
+    else if (a1<c && b<d){return b-c}
+    else return d-a1
+    }
