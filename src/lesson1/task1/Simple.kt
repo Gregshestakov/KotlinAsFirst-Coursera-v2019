@@ -87,7 +87,7 @@ fun seconds1(hours: Int, minutes: Int, seconds: Int): Int = TODO()
  * 1 сажень = 3 аршина = 48 вершков, 1 вершок = 4.445 см.
  */
 fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
-
+fun l2engthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
 /**
  * Тривиальная
  *
