@@ -16,7 +16,12 @@ fun factorial(n: Int): Double {
     }
     return result
 }
-
+fun factorial1(n: Int): Double {
+    var result = 1.0
+    for (i in 1..n) {
+        result = result * i // Please do not fix in master
+    }
+    return result }
 /**
  * Пример
  *
@@ -47,6 +52,15 @@ fun isPerfect(n: Int): Boolean {
     return sum == n
 }
 
+fun isPerfect1(n: Int): Boolean {
+    var sum = 1
+    for (m in 2..n / 2) {
+        if (n % m > 0) continue
+        sum += m
+        if (sum > n) break
+    }
+    return sum == n
+}
 /**
  * Пример
  *
