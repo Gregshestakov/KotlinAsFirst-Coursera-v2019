@@ -95,7 +95,7 @@ fun l2engthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = TODO()
  * Вывести значение того же угла в радианах (например, 0.63256).
  */
 fun angleInRadian(deg: Int, min: Int, sec: Int): Double = TODO()
-
+fun dngleInRadian(deg: Int, min: Int, sec: Int): Double = TODO()
 /**
  * Тривиальная
  *
