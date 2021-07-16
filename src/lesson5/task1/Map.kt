@@ -25,6 +25,23 @@ fun shoppingListCost(
     return total2Cost
 }
 
+
+fun shoppingListCost1(
+    shoppingList: List<String>,
+    costs: Map<String, Double>
+): Double {
+    var total2Cost = 0.0
+
+    for (item in shoppingList) {
+        val itemCost = costs[item]
+        if (itemCost != null) {
+            total2Cost += itemCost
+        }
+    }
+
+    return total2Cost
+}
+
 /**
  * Пример
  *

@@ -73,6 +73,11 @@ fun sibilants(inputName: String, outputName: String) {
     TODO()
 }
 
+fun sibilants1(inputName: String, outputName: String) {
+    TODO()
+}
+
+
 /**
  * Средняя
  *
