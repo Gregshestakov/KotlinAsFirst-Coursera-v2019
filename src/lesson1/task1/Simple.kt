@@ -12,6 +12,10 @@ import kotlin.math.*
 fun sqr(x: Int) = x * x
 fun sqr1(x1: Int) = x1 * x1
 fun sqr2(x12: Int) = x12 * x12
+
+fun sqr3(x: Int) = x * x
+fun sqr4(x1: Int) = x1 * x1
+fun sqr5(x12: Int) = x12 * x12
 /**
  * Пример
  *
@@ -55,7 +59,7 @@ fun quadraticRootProduct1(a: Double, b: Double, c: Double): Double {
  * Пример главной функции
  */
 fun main() {
-    val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
+    val x1x3 = quadraticRootProduct(1.0, 13.0, 42.0)
     println("Root product: $x1x2")}
 
 
@@ -65,7 +69,7 @@ fun main() {
  * Пользователь задает время в часах, минутах и секундах, например, 8:20:35.
  * Рассчитать время в секундах, прошедшее с начала суток (30035 в данном случае).
  */
-fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
+fun seconds(hous: Int, minutes: Int, seconds: Int): Int = TODO()
 /**
  * Тривиальная
  *
